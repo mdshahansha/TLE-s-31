@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 void reverseArray(int arr[], int start, int end) {
     while (start < end) {
@@ -30,7 +31,10 @@ int main() {
             std::cin >> arr[i];
         }
 
-        if (good(arr, n)) {
+        if (good(arr, n) ) {
+            std::cout << "YES" << std::endl;
+            continue;
+        }else if(k>=2){
             std::cout << "YES" << std::endl;
             continue;
         }
